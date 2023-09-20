@@ -1,0 +1,125 @@
+/* styles.css */
+@font-face {
+    font-family: 'outfit_black';
+    src:local('outfit_black'), url('Calculator\Outfit-Black.ttf') format('truetype');
+         
+   
+    font-weight:900;
+    font-style:normal;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'outfit_black';
+}
+
+.container {
+    background-color: #404258;
+    max-width: 400px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin: 7vh auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#display {
+    text-align: right;
+    height: 150px;
+    max-height: 150px; /* Set a maximum height */
+    overflow: auto; /* Allow scrolling if content overflows */
+    white-space: pre-wrap;
+    background-color: whitesmoke;
+    border: 1px solid #333; /* Add border */
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 13px;
+    padding-top: 30px;
+    line-height: 200px;
+    padding: 10px 8px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #6B728E;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 5px;
+    padding-top: 10px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    
+}
+
+
+.button {
+    width: 16px;
+    height: 16px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #D0BFFF;
+    border: 1px ;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6B728E;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dot,.back,.div,.multi,.minus,.plus{
+    color: #00FFAB;
+}
+
+.equals{
+    background-color: #00FFAB;
+    color: whitesmoke;
+}
+
+.button:hover{
+    background-color: #D0BFFF;
+    color: #6B728E;
+    
+}
+
+.ac{
+    color: #FF6969;
+}
+.ac:hover{
+    background-color: #FF6969;
+    color:#6B728E;
+}
+.dot:hover,
+.back:hover,
+.div:hover,
+.multi:hover,
+.minus:hover,
+.plus:hover {
+    background-color: #00FFAB;
+    color: #6B728E;
+    transition: 0.2s ease-in-out;
+}
+.equals:hover{
+    color: #00FFAB;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+
